@@ -24,7 +24,7 @@
         {
             Console.WriteLine($"Ievadiet par cik km/h jāpalielina auto ātrums:");
             double addSpeed = double.Parse(Console.ReadLine());
-            Speed += addSpeed; 
+            Speed += addSpeed;
             Console.WriteLine($"{Mark} ar numurzīmi {Number} pārvietojas ar {Speed} km/h");
         }
         public void ReduceSpeed()

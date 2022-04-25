@@ -9,7 +9,7 @@
             Console.WriteLine($"Ievadiet telefona modeli");
             Model = Console.ReadLine();
             Console.WriteLine($"Ievadiet telefona garuma izmēru");
-            Hight = double.Parse(Console.ReadLine());
+            Height = double.Parse(Console.ReadLine());
             Console.WriteLine($"Ievadiet telefona platuma izmēru");
             Width = double.Parse(Console.ReadLine());
             Console.WriteLine($"Ievadiet telefona augstuma izmēru");
@@ -17,7 +17,7 @@
         }
         public string Mark { get; set; }
         public string Model { get; set; }
-        public double Hight { get; set; }
+        public double Height { get; set; }
         public double Width { get; set; }
         public double Depth { get; set; }
         public void Call()

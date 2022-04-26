@@ -2,27 +2,28 @@
 {
     public class Item
     {
-        public Item()
+        public Item(double height, double width, double depth, double weight)
         {
-            Console.WriteLine($"Ievadiet preces garumu");
-            Height = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ievadiet preces platumu");
-            Width = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ievadiet preces augstumu");
-            Depth = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ievadiet preces svaru");
-            Weight = double.Parse(Console.ReadLine());
+            Height = height;
+            Width = width;
+            Depth = depth;
+            Weight = weight;
         }
         public double Height { get; }
         public double Width { get; }
         public double Depth { get; }
-        public double Weight { get; set; }
+        public double Weight { get; }
 
         public void NewItem()
         {
-            Console.WriteLine($"Ievadiet jaunās preces nosaukumu:");
-            string name = Console.ReadLine();
-            //            Console.WriteLine($"Ar {Mark} {Model} ir iespējams veikt zvanus");
+            //Console.WriteLine($"Ievadiet preces garumu");
+            //double height = double.Parse(Console.ReadLine());
+            //Console.WriteLine($"Ievadiet preces platumu");
+            //double width = double.Parse(Console.ReadLine());
+            //Console.WriteLine($"Ievadiet preces augstumu");
+            //double depth = double.Parse(Console.ReadLine());
+            //Console.WriteLine($"Ievadiet preces svaru");
+            //double weight = double.Parse(Console.ReadLine());
         }
         public void ShowItem()
         {

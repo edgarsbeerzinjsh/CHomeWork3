@@ -14,16 +14,18 @@
         public double Depth { get; }
         public double Weight { get; }
 
-        public void NewItem()
+        public static Item NewItem()
         {
-            //Console.WriteLine($"Ievadiet preces garumu");
-            //double height = double.Parse(Console.ReadLine());
-            //Console.WriteLine($"Ievadiet preces platumu");
-            //double width = double.Parse(Console.ReadLine());
-            //Console.WriteLine($"Ievadiet preces augstumu");
-            //double depth = double.Parse(Console.ReadLine());
-            //Console.WriteLine($"Ievadiet preces svaru");
-            //double weight = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Ievadiet preces garumu");
+            double height = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Ievadiet preces platumu");
+            double width = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Ievadiet preces augstumu");
+            double depth = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Ievadiet preces svaru");
+            double weight = double.Parse(Console.ReadLine());
+            Item item = new Item(height, width, depth, weight);
+            return item;
         }
         public void ShowItem()
         {
